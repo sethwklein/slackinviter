@@ -1,7 +1,8 @@
 FROM golang
 
-COPY .
-RUN go get .
+WORKDIR /go/src/github.com/sethwklein/slackinviter
+COPY . .
+RUN GOPATH=/go go get .
 
 # SLACKINVITER_PORT
 # SLACKINVITER_CAPTCHASITEKEY
