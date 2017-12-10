@@ -9,4 +9,4 @@ RUN GOPATH=/go go get .
 # SLACKINVITER_CAPTCHASECRET
 # SLACKINVITER_SLACKTOKEN
 
-CMD slackinviter
+CMD ["slackinviter"]
